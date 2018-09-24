@@ -1,0 +1,224 @@
+/*
+Theme Name: Enfold Child
+Description: A <a href='http://codex.wordpress.org/Child_Themes'>Child Theme</a> for the Enfold Wordpress Theme. If you plan to do a lot of file modifications we recommend to use this Theme instead of the original Theme. Updating wil be much easier then.
+Version: 1.0
+Author: Kriesi
+Author URI: http://www.kriesi.at
+Template: enfold
+*/
+
+
+
+/*Add your own styles here:*/
+
+/* General */
+#page-title {
+	height:280px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	position:relative;
+}
+
+#page-title h1 {
+	font-size:65px;
+	font-weight:normal;
+}
+
+#page-title h3 {
+	font-size:32px;
+	font-weight:normal;
+	z-index:10;
+	display:flex;
+	align-items:center;
+}
+
+#page-title .page-title__mark-line {
+	display:inline-block;
+	background: rgba(255, 255, 255, .6);
+	width:40px;
+	height:2px;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+#full_width_content .flex_cell_inner {
+	max-width:1200px;
+	margin:auto;
+}
+
+.sub-title {
+	font-weight:normal;
+	display:inline-block;
+	border-bottom:solid 2px #b5b5b5;
+	width:150px;
+	padding-bottom:10px;
+	margin-bottom:10px;
+}
+
+/* Logo */
+#header_main .logo a{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+/* Menu */
+#avia-menu > .menu-item a{
+	padding:0;
+	display:flex;
+	align-items:center;
+}
+
+.avia-menu-text {
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	padding-left:35px;
+	padding-right:35px;
+	border-left:solid 1px #b5b5b5;
+}
+
+#avia-menu li:nth-last-child(2) .avia-menu-text {
+	padding-right: 0px !important;
+}
+
+#avia-menu li:first-child .avia-menu-text {
+	border-left:none;
+}
+
+.menu-chs, .menu-en {
+	display:block;
+	font-size:18px;
+	font-weight:normal;
+}
+
+.menu-chs{
+	line-height:25px;
+}
+
+.menu-en{
+	line-height:25px;
+}
+
+.avia-menu-fx {
+	display:none;
+}
+
+.current-menu-item .menu-en, #avia-menu > .menu-item a:hover .menu-en{
+	color:#4482c4;
+	border-bottom:solid 4px #4482c4;
+}
+
+#avia-menu > .menu-item a .menu-en {
+	-webkit-transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+	transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+}
+
+/* Pages */
+.about-us__title--bg{
+	background:url("imgs/aboutus-bg.png") center center no-repeat;
+}
+
+.cooperation__title--bg{
+	background:url("imgs/cooperation-bg.png") center center no-repeat;
+}
+
+.newsletter__title--bg{
+	background:url("imgs/newsletter-bg.png") center center no-repeat;
+}
+
+#cooperation__sub-menu{
+	display:block;
+	border-bottom:solid 1px #fff;
+}
+
+#cooperation__sub-menu a {
+	text-decoration:none !important;
+}
+
+#cooperation__sub-menu span:first-child {
+	border-bottom: solid 3px #1174d7;
+	padding-bottom: 7px;
+}
+
+/* Download */
+.newsletter-download-list li{
+	list-style:none;
+	margin-top:5px;
+}
+
+.download-link {
+	display:block;
+	text-decoration:none !important;
+	color:#606060 !important;
+	font-size:18px;
+	border-bottom:solid 1px #000;
+}
+
+.download-link:hover {
+	color:#1174d7 !important;
+}
+
+.download-link:after {
+	content:"\203A";
+	float:right;
+	font-size:24px;
+}
+
+/* Pagination */
+.pagination {
+	display:flex;
+	justify-content:center;
+}
+
+#top .pagination .current, #top .pagination a, #top .fullsize .template-blog .pagination a {
+	float:none;
+	border-radius:5px;
+	margin: 0 5px;
+	background-color: #cdcdcd;
+	color:#fff;
+	font-size: 16px;
+}
+
+#top .pagination .current, #top .pagination a:hover, #top .main_color .pagination a:hover{
+	background-color: #1174d7;
+}
+
+/* Footer */
+#footer > .container{
+	padding: 0;
+}
+
+#footer > .container > .av_one_fourth {
+	margin-left: 0;
+	width:25%;
+}
+
+.footer__col {
+	display:flex;
+	justify-content:center;
+}
+
+.footer__col--icon {
+	margin-right: 5px;
+}
+
+.footer__col--content {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+.footer__col--content h3 {
+	font-weight:normal;
+	font-size: 18px;
+	color:#111111;
+}
+
+.footer__col--content p {
+	margin:0;
+	font-size: 16px;
+	color:#555555;
+}
