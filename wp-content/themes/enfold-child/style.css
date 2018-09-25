@@ -10,6 +10,9 @@ Template: enfold
 
 
 /*Add your own styles here:*/
+.image-overlay-inside, .image-overlay.overlay-type-extern {
+display: none;
+}
 
 /* General */
 #page-title {
@@ -43,7 +46,7 @@ Template: enfold
 	margin-right:10px;
 }
 
-#full_width_content .flex_cell_inner {
+#full_width_content .flex_cell_inner, #full_width_content_white{
 	max-width:1200px;
 	margin:auto;
 }
@@ -129,6 +132,21 @@ Template: enfold
 	background:url("imgs/newsletter-bg.png") center center no-repeat;
 }
 
+.list__title--bg{
+	height: 164px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+.list__title--bg h3 {
+	font-size:32px;
+}
+
+.list__title--bg h3:first-child {
+	font-weight:normal;
+}
+
 #cooperation__sub-menu{
 	display:block;
 	border-bottom:solid 1px #fff;
@@ -141,6 +159,58 @@ Template: enfold
 #cooperation__sub-menu span:first-child {
 	border-bottom: solid 3px #1174d7;
 	padding-bottom: 7px;
+}
+
+/* List Menu */
+#line_bg {
+	min-height:22px !important;
+	height:22px;
+}
+
+#school_list .menu li:first-child {
+	border-top-width:0 !important;
+}
+
+#school_list .menu a {
+	font-size:18px;
+	color:#606060;
+}
+
+#school_list .menu a:hover {
+	color:#1174d7;
+}
+
+#school_list .menu a:after{
+	content: url('imgs/icon4_03.png');
+	float:right;
+}
+
+#school_list .menu a:hover:after {
+	content: url('imgs/icon4_05.png');
+}
+
+#school_list .tab_content {
+	padding:0;
+	border:none;
+	background:transparent;
+}
+
+#school_list .tab_titles{
+	margin-bottom:30px;
+}
+
+#school_list .tab_titles .tab{
+	border:none;
+	font-size:26px;
+	color:#aeaeae;
+	font-weight:normal;
+	border-bottom:solid 1px #e7e7e7;
+}
+
+#school_list .tab_titles .active_tab {
+	background:transparent;
+	border-bottom:solid 3px #1296db;
+	padding-bottom:12px;
 }
 
 /* Download */
